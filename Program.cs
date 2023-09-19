@@ -20,11 +20,10 @@ namespace N_Main_Execute
             Console.WriteLine(cal.MultiNum(num1, num2));    // 406
             Console.WriteLine(cal.DivNum(num1, num2));      // 0.4287....   
 
+            // this is something to do 
 
 
 
-            
-                 
         }
     }
 }
