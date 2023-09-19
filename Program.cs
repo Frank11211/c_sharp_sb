@@ -18,7 +18,7 @@ namespace N_Main_Execute
             //Console.WriteLine(cal.MultiNum(num1, num2));    // 406
             //Console.WriteLine(cal.DivNum(num1, num2));      // 0.4287....   
 
-            // This is testing
+            // This is testing 12
             // Gather user input
             Console.Write("Input first digit :");
             double temp1 = Convert.ToDouble(Console.ReadLine());
