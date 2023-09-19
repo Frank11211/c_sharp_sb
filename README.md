@@ -1,5 +1,14 @@
 # C Sharp Sandbox
 
+Explicit Casting 
+- double 
+- float 
+- long 
+- int 
+- char
+
+double -> float -> long -> int -> char
+
 # Initial Project Github Command (First Time)
 - git init
 - git remote add origin <input your repo ref here>
