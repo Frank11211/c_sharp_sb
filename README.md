@@ -2,7 +2,7 @@
 
 # Initial Project Github Command (First Time)
 - git init
-- git remote add origin <git@github.com:nunomazer/myrepository.>
+- git remote add origin <input your repo ref here>
 - git branch -M main
 - git add .
 - git commit -m 'feat: My first feature'
