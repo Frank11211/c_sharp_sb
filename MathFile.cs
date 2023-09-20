@@ -19,7 +19,7 @@ namespace N_MathBasic
             set { temp2 = value;}
         }
 
-
+git
         // Converter
         public MathBasic( double input1 = 0.0, double input2 = 0.0){
             temp1 = input1 ; // 0.0 as default value
@@ -39,8 +39,6 @@ namespace N_MathBasic
 
 
 
-
-
         // Minus
         public int MinusNum(int temp1 , int temp2 ){
             return temp1 - temp2 ;
@@ -50,8 +48,6 @@ namespace N_MathBasic
          public double MinusNum(double temp1 , double temp2 ){
             return temp1 - temp2 ;
         }
-
-
 
 
 
@@ -92,7 +88,6 @@ namespace N_MathBasic
         public double ConvertPercentToNum(int value1 = 0 ,int temp_percent = 0){
             return (temp_percent / 100) * value1 ;
         }
-
 
     }
 }
