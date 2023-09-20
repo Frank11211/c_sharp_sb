@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\5511\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
+      "projectUniqueName": "C:\\Users\\5511\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
       "projectName": "c_sharp_sb",
-      "projectPath": "C:\\Users\\Asus\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Desktop\\train_ground\\c_sharp_sb\\obj\\",
+      "projectPath": "C:\\Users\\5511\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
+      "packagesPath": "C:\\Users\\5511\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\5511\\Desktop\\train_ground\\c_sharp_sb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\5511\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
