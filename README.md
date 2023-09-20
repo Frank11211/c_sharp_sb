@@ -57,7 +57,7 @@ class Program
 #  Abstract vs Interface
 - hide detail & show only essential info 
 
-#### Abstract
+### Abstract
 - unable to create object from class
 - method have no body, only use in abstact class
 
@@ -91,3 +91,68 @@ class Program
 ```
 
 #### Interface
+- contain properties and methods, but not fields.
+- Able multiple interface, but not inheritance
+- members of an interface are **abstract** and ***public**.
+
+```cs
+
+interface IMyInterface
+{
+    int MyProperty { get; } // Property to access the field
+
+    void MyMethod();
+}
+
+class MyConcreteClass : IMyInterface
+{
+    private int myField = 42;
+
+    public int MyProperty
+    {
+        get { return myField; }
+    }
+
+    public void MyMethod()
+    {
+        // Implementation of the method.
+    }
+}
+
+---------------------------------------------------------
+- Multiple Interface
+
+interface IFirstInterface 
+{
+  void myMethod(); // interface method
+}
+
+interface ISecondInterface 
+{
+  void myOtherMethod(); // interface method
+}
+
+// Implement multiple interfaces
+class DemoClass : IFirstInterface, ISecondInterface 
+{
+  public void myMethod() 
+  {
+    Console.WriteLine("Some text..");
+  }
+  public void myOtherMethod() 
+  {
+    Console.WriteLine("Some other text...");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args)
+  {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
+
+```
