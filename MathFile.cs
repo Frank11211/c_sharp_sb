@@ -7,18 +7,22 @@ namespace N_MathBasic
         // Field
         public double temp1 = 0;
         public double temp2 = 0;
+
+        public double temp_percent = 0;
         
 
         // Properties
-         public double Temp1 {
+        public double Temp1 {
             get { return temp1;}
             set { temp1 = value;}
         }
-          public double Temp2 {
+        public double Temp2 {
             get { return temp2;}
             set { temp2 = value;}
         }
-
+        public double Temp_Percent{
+            get;set;
+        }
 
         // Converter
         public MathBasic( double input1 = 0.0, double input2 = 0.0){
@@ -89,8 +93,8 @@ namespace N_MathBasic
 
 
         // Minus Percentage
-        public double ConvertPercentToNum(int value1 = 0 ,int temp_percent = 0){
-            return (temp_percent / 100) * value1 ;
+        public double ConvertPercentToNum(double value1 = 0.0 ,double temp_percent = 0.0){
+            return value1 - ((temp_percent / 100) * value1) ;
         }
 
 
