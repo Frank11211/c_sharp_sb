@@ -22,7 +22,7 @@ Reference : https://mazer.dev/en/git/troubleshooting/error-src-refspec-main-does
 # Inheritance == Polymorphism 
 - **virtual** => method prepprae to be override in base clase
 - **override** => method override in drived class
-
+```cs
 class Animal  // Base class (parent) 
 {
   public **virtual** void animalSound() 
@@ -51,8 +51,9 @@ class Program
 
   }
 }
-
+```
 -------------------------------------------------------------------
+
 #  Abstract vs Interface
 - hide detail & show only essential info 
 
@@ -60,6 +61,7 @@ class Program
 - unable to create object from class
 - method have no body, only use in abstact class
 
+```cs
 **abstract** class Animal{
     //**No body contain in abstract method** 
     public **abstract** void AnimalCall();
@@ -86,5 +88,6 @@ class Program
   }
 }
 
+```
 
 #### Interface
