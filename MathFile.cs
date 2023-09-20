@@ -59,8 +59,6 @@ namespace N_MathBasic
             return temp1 * temp2 ;
         }
 
-
-
         public int DivNum(int temp1 , int temp2 ){
             return temp1 / temp2 ;
         }
@@ -69,8 +67,6 @@ namespace N_MathBasic
          public double DivNum(double temp1 , double temp2 ){
             return temp1 / temp2 ;
         }
-
-
 
         // Check Remainder 
         public bool ReminderNum(int temp1 , int temp2 ){
@@ -82,12 +78,10 @@ namespace N_MathBasic
             return (temp1 % temp2) != 0;
         }
 
-
         // Minus Percentage
         public double ConvertPercentToNum(double value1 = 0.0 ,double temp_percent = 0.0){
             return value1 - ((temp_percent / 100) * value1) ;
         }
-
 
 
     }
