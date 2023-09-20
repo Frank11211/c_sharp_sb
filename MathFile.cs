@@ -20,6 +20,9 @@ namespace N_MathBasic
             get { return temp2;}
             set { temp2 = value;}
         }
+        public double Temp_Percent{
+            get;set;
+        }
 
         // Converter
         public MathBasic( double input1 = 0.0, double input2 = 0.0){

@@ -34,7 +34,7 @@ namespace N_Main_Execute
             Console.WriteLine(" ") ;
             Console.WriteLine("Percentage you set is    : "+ cal.Temp_Percent +" %");
             Console.WriteLine("After percentage is      : "+ cal.ConvertPercentToNum(cal.AddNum(cal.Temp1, cal.Temp2), cal.Temp_Percent));
-            
+ 
         }
         
         static void Main(string []args){
