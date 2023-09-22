@@ -1,8 +1,22 @@
 ﻿using System;
 using N_MathBasic;
+using N_VehicleFile;
 
 namespace N_Main_Execute
-{   
+{    
+    // VehicleFile -> Base Abstract Class
+    class Car : VehicleType {
+       public override void VehicleSpeak(){
+            Console.WriteLine("This car is going to Pi Pi PIIIIIIII mother fucker");
+       } 
+    }
+
+    class Motor : VehicleType {
+        public override void VehicleSpeak(){
+            Console.WriteLine("This Motor is going to VROMMMMM mother fucker");
+       } 
+    }
+
     class MainExecute{
         
         // static -> call method without create object.
@@ -37,10 +51,59 @@ namespace N_Main_Execute
             
         }
         
+        public static void AskVehicleCar(){
+            Car car1 = new Car();
+
+            Console.Write("Input your car Model: ");
+            car1.VehicleModel = Console.ReadLine();
+    
+            Console.Write("The model color for car: ");
+            car1.VehicleColor = Console.ReadLine();
+
+            Console.Write("Border Price to be sell: ");
+            car1.VehiclePrice = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine(" Car Model : " + car1.VehicleModel);
+            Console.WriteLine(" Car Color : " + car1.VehicleColor);
+            Console.WriteLine(" Car Type  : " + car1.VehiclePrice);
+
+            Console.WriteLine(" ");
+        }
+
+        public void AskVehicleMotor(){
+
+            Motor m1 = new Motor();
+            Console.Write("Input your motor Model: ");
+            m1.VehicleModel = Console.ReadLine();
+    
+            Console.Write("The model color for motor: ");
+            m1.VehicleColor = Console.ReadLine();
+
+            Console.Write("Border Price to be sell: ");
+            m1.VehiclePrice = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine(" ");
+
+            Console.WriteLine(" Motor Model : " + m1.VehicleModel);
+            Console.WriteLine(" Motor Color : " + m1.VehicleColor);
+            Console.WriteLine(" Motor Type  : " + m1.VehiclePrice);
+
+            Console.WriteLine(" ");
+
+            m1.VehicleSpeak();
+            m1.ShutDown();
+
+            Console.WriteLine(" ");
+        }
+
         static void Main(string []args){
             
-          AskMath();
-    
+          //AskMath();
+          //AskVehicleCar();
+           MainExecute m1 =  new MainExecute();
+           m1.AskVehicleMotor();
         }
     }
 }
