@@ -1,6 +1,9 @@
 ﻿using System;
 using N_MathBasic;
 using N_VehicleFile;
+using Interface_File;
+
+
 
 namespace N_Main_Execute
 {    
@@ -16,6 +19,36 @@ namespace N_Main_Execute
             Console.WriteLine("This Motor is going to VROMMMMM mother fucker");
        } 
     }
+
+    //Interface Class
+    class File : IFile , ICreateNew{
+        // Explicit Method
+        // Prevent mix other interface with each other
+        // With Interface, able to keep code DRY + handle each interface easily
+
+        void IFile.ReadFile(){
+            Console.WriteLine("Reading File in progress from IFile");
+        }
+         void IFile. AlterFile(){
+            Console.WriteLine("You may alter file now , one from IFile ");
+        }
+
+        void ICreateNew. ReadFile(){
+            Console.WriteLine("You may alter file now , one from ICreate ");
+        }
+
+        void ICreateNew. AlterFile(){
+            Console.WriteLine("You may alter file now , one from ICreate  ");
+        }
+    
+        // Standalone Method
+        public void Search(string text)
+        {
+            Console.WriteLine(text);
+        }
+    }
+
+    
 
     class MainExecute{
         
@@ -71,7 +104,7 @@ namespace N_Main_Execute
 
             Console.WriteLine(" ");
         }
-
+1
         public void AskVehicleMotor(){
 
             Motor m1 = new Motor();
@@ -98,12 +131,27 @@ namespace N_Main_Execute
             Console.WriteLine(" ");
         }
 
+        public static void AskSaveFile(){
+
+            // Explicit Method , access resource saperately 
+            File f1 = new File();
+            IFile f2 = new File();
+            ICreateNew f3 = new File();
+           
+           f2.ReadFile();
+           f3.AlterFile();
+
+            string? word2 = Console.ReadLine();
+            f1.Search(word2);
+        }
         static void Main(string []args){
             
           //AskMath();
           //AskVehicleCar();
-           MainExecute m1 =  new MainExecute();
-           m1.AskVehicleMotor();
+          //MainExecute m1 =  new MainExecute();
+          //m1.AskVehicleMotor();
+          AskSaveFile();
+
         }
     }
 }
