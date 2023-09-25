@@ -2,6 +2,7 @@
 using N_MathBasic;
 using N_VehicleFile;
 using Interface_File;
+using System.Security.Cryptography.X509Certificates;
 
 
 
@@ -48,7 +49,36 @@ namespace N_Main_Execute
         }
     }
 
-    
+    //Static class -> simple and easier to call/access
+    static class Calculator{
+        private static int num1 = 0;
+        private static int num2 = 0;
+
+      
+        public static void DisInfo(){
+            Console.WriteLine("First Digit  :" + num1);
+            Console.WriteLine("Second Digit :" + num2);
+
+            // Callback Method
+            Console.WriteLine(Minus());
+        }
+
+        public static int Minus(){
+            
+            return num1 - num2;
+        }
+
+        public static void AskInfo(){
+            Console.Write("Enter your first digit :");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter your second digit :");
+            num2 = Convert.ToInt32(Console.ReadLine());
+        }
+
+    }
+
+
 
     class MainExecute{
         
@@ -130,7 +160,7 @@ namespace N_Main_Execute
 
             Console.WriteLine(" ");
         }
-
+        
         public static void AskSaveFile(){
 
             // Explicit Method , access resource saperately 
@@ -146,12 +176,14 @@ namespace N_Main_Execute
         }
         static void Main(string []args){
             
-          //AskMath();
-          //AskVehicleCar();
-          //MainExecute m1 =  new MainExecute();
-          //m1.AskVehicleMotor();
-          AskSaveFile();
-
+            //AskMath();
+            //AskVehicleCar();
+            //MainExecute m1 =  new MainExecute();
+            //m1.AskVehicleMotor();
+            //AskSaveFile();
+            Calculator.AskInfo();
+            Calculator.DisInfo();
+    
         }
     }
 }

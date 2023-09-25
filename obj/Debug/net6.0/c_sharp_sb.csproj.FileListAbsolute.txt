@@ -28,3 +28,17 @@ C:\Users\5511\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\refint\c_sharp_sb
 C:\Users\5511\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.pdb
 C:\Users\5511\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.genruntimeconfig.cache
 C:\Users\5511\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\ref\c_sharp_sb.dll
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\bin\Debug\net6.0\c_sharp_sb.exe
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\bin\Debug\net6.0\c_sharp_sb.deps.json
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\bin\Debug\net6.0\c_sharp_sb.runtimeconfig.json
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\bin\Debug\net6.0\c_sharp_sb.dll
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\bin\Debug\net6.0\c_sharp_sb.pdb
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.AssemblyInfo.cs
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.dll
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\refint\c_sharp_sb.dll
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.pdb
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\c_sharp_sb.genruntimeconfig.cache
+C:\Users\Dell\Desktop\train_ground\c_sharp_sb\obj\Debug\net6.0\ref\c_sharp_sb.dll
