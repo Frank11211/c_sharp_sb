@@ -2,6 +2,7 @@
 using N_MathBasic;
 using N_VehicleFile;
 using Interface_File;
+using PatialCompile;
 
 
 
@@ -144,14 +145,30 @@ namespace N_Main_Execute
             string? word2 = Console.ReadLine();
             f1.Search(word2);
         }
+       
+        public static void CheckPartialCompile(){
+            Employee e1 = new Employee();
+
+            Console.Write("Emplolyee Name :");
+            e1.EpName = Console.ReadLine();
+
+            Console.Write("Customer Name Handling:");
+            e1.CustHandle = Console.ReadLine();
+
+            e1.GetInfo();
+
+            Console.WriteLine("Your new number will be :" + e1.EpNum);
+            
+            
+        }
         static void Main(string []args){
             
           //AskMath();
           //AskVehicleCar();
           //MainExecute m1 =  new MainExecute();
           //m1.AskVehicleMotor();
-          AskSaveFile();
-
+          //AskSaveFile();
+          CheckPartialCompile();
         }
     }
 }
