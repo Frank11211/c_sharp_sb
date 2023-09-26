@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "wOdUUThZUXHtd7F1AtOyQnUDZKHRbfZf9wDfquLLuffNEQyodTT8VKD19wrA2KFsQj2lPH5QpTW1htw7IlrqzA==",
+  "dgSpecHash": "edalZdDCC7JpK+7oZ3jwdlKmnZhLuRfm3Me9FMGRa5JHepM1KWgI0QE8y+f6gWE1BzJOkbpW4eZPu/lLkd9fBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Dell\\Desktop\\train_ground\\c_sharp_sb\\c_sharp_sb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
