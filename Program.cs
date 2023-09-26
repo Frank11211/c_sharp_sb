@@ -4,6 +4,9 @@ using N_VehicleFile;
 using Interface_File;
 using PatialCompile;
 using System.Security.Cryptography.X509Certificates;
+using N_ApplyIndexes;
+using System.Net;
+using System.Runtime.InteropServices;
 
 namespace N_Main_Execute
 {    
@@ -77,7 +80,81 @@ namespace N_Main_Execute
 
     }
 
+    // Generic class Method -> can be any type
+    class ReferenceToUse<Type>{
+        // declare field , In this case will be array
+        private Type[] Student;
+        private Type Email;
 
+        public ReferenceToUse(){
+            Student = new Type[10];
+        }
+        
+        // Overload method
+        public ReferenceToUse(int length){
+            Student = new Type[length];
+        }
+
+
+        public Type this[int indexes]{
+            get{
+                // Error Handling 
+                if(indexes < 0 || indexes > Student.Length){
+                    throw new IndexOutOfRangeException("Index out of range");
+                }
+
+                return Student[indexes];
+            }
+           
+            set{
+                // Error Handling 
+                if(indexes < 0 || indexes > Student.Length){
+                    throw new IndexOutOfRangeException("Index out of range");
+                }
+
+                Student[indexes] = value;
+            }
+        }
+
+        // Display Total Length store in Array
+        public int DisTotalElement(){
+            return Student.Length;
+        }
+
+    }
+
+
+    // Build a blueprint for class
+    class StudentInfo<Type>{
+        public Type Email    ;
+        public Type Password ;
+        
+        // Constructor
+        public StudentInfo(Type temp1, Type temp2){
+            Email = temp1;
+            Password = temp2;
+        }
+
+
+        public void ClarifyInfo(){
+            string admin1 = "wenfung11211@gmail.com";
+            string password = "121118Fk.";
+
+            if(Convert.ToString(Email)  ==  admin1 && Convert.ToString(Password)  ==  password){
+                Console.WriteLine("Welcome Admin");
+                Console.WriteLine("");
+            }else{
+                Console.WriteLine("You are not the admin");
+                Console.WriteLine("");
+            }
+        }
+
+        public void ShowInfo(){
+            Console.WriteLine(Email);
+            Console.WriteLine(Password);
+            ClarifyInfo();
+        }
+    }
 
     class MainExecute{
         
@@ -189,14 +266,26 @@ namespace N_Main_Execute
             
             
         }
+
+        public void AskGenericArray(){
+            // Create Object with self-made data type 
+            ReferenceToUse<int> m1 = new ReferenceToUse<int>();         // Class is integer variable, save multiple variable in array ()depends
+            ReferenceToUse<string> s1 = new ReferenceToUse<string>(7);
+
+
+            //string[] TeachName = new string[10];
+        }
+
         static void Main(string []args){
             
           //AskMath();
           //AskVehicleCar();
           //MainExecute m1 =  new MainExecute();
           //m1.AskVehicleMotor();
-          AskSaveFile();
+          //AskSaveFile();
 
+          StudentInfo<string> st1 = new StudentInfo<string>("wenfung11211@gmail.com","121118Fk.");
+          st1.ShowInfo();
         }
     }
 }
