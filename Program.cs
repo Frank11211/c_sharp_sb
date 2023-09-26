@@ -266,6 +266,7 @@ namespace N_Main_Execute
             
             
         }
+<<<<<<< HEAD
 
         public void AskGenericArray(){
             // Create Object with self-made data type 
@@ -276,6 +277,9 @@ namespace N_Main_Execute
             //string[] TeachName = new string[10];
         }
 
+=======
+        
+>>>>>>> main
         static void Main(string []args){
             
           //AskMath();
