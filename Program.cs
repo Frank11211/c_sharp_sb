@@ -123,7 +123,6 @@ namespace N_Main_Execute
 
     }
 
-
     // Build a blueprint for class
     class StudentInfo<Type>{
         public Type Email    ;
@@ -154,6 +153,35 @@ namespace N_Main_Execute
             Console.WriteLine(Password);
             ClarifyInfo();
         }
+    }
+
+    // Widely use in project
+    class KeyValuePairDate<TKey, TValue>{
+        public TKey KeyData     ;
+        public TValue ValueData {get; set;}
+
+        // Default Constructor
+        public KeyValuePairDate(){}
+
+        //Overlaod Constructor
+        public KeyValuePairDate(TKey TempKey , TValue TempValue ){
+            this.KeyData     = TempKey;
+            this.ValueData   = TempValue;
+        }
+        
+        // Practice Properties
+        public TKey KeyDataInfo{
+            get{ return this.KeyData;}
+            set{ this.KeyData = value;}
+        }
+
+        public void ShowKeyValuePair(){
+            Console.WriteLine(KeyData);
+            Console.WriteLine("");
+            Console.WriteLine(ValueData);
+        }
+
+
     }
 
     class MainExecute{
@@ -284,8 +312,11 @@ namespace N_Main_Execute
           //m1.AskVehicleMotor();
           //AskSaveFile();
 
-          StudentInfo<string> st1 = new StudentInfo<string>("wenfung11211@gmail.com","121118Fk.");
-          st1.ShowInfo();
+          //StudentInfo<string> st1 = new StudentInfo<string>("wenfung11211@gmail.com","121118Fk.");
+          //st1.ShowInfo();
+
+          KeyValuePairDate<string , int> ky1 = new KeyValuePairDate<string, int>();
+          ky1.KeyDataInfo = "Frank";
         }
     }
 }
