@@ -7,6 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 using N_ApplyIndexes;
 using System.Net;
 using System.Runtime.InteropServices;
+using CollectPrac;
 
 namespace N_Main_Execute
 {    
@@ -304,6 +305,13 @@ namespace N_Main_Execute
             //string[] TeachName = new string[10];
         }
 
+
+
+
+
+
+
+
         static void Main(string []args){
             
           //AskMath();
@@ -315,9 +323,15 @@ namespace N_Main_Execute
           //StudentInfo<string> st1 = new StudentInfo<string>("wenfung11211@gmail.com","121118Fk.");
           //st1.ShowInfo();
 
-          KeyValuePairDate<string , int> ky1 = new KeyValuePairDate<string, int>();
-          ky1.KeyDataInfo = "Frank";
+          //KeyValuePairDate<string , int> ky1 = new KeyValuePairDate<string, int>();
+          //ky1.KeyDataInfo = "Frank";
+
+          InitCollectPrac obj1 = new InitCollectPrac();
+          obj1.AddSomething();
+          obj1.AccessingItem();
           
         }
     }
+
+
 }
