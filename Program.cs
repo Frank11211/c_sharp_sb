@@ -310,8 +310,6 @@ namespace N_Main_Execute
 
 
 
-
-
         static void Main(string []args){
             
           //AskMath();
